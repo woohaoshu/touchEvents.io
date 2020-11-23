@@ -53,46 +53,46 @@
     <script>
         window.addEventListener('load', function () {
             var events = [
-                // 'MSPointerDown',
-                // 'MSPointerUp',
-                // 'MSPointerCancel',
-                // 'MSPointerMove',
-                // 'MSPointerOver',
-                // 'MSPointerOut',
-                // 'MSPointerEnter',
-                // 'MSPointerLeave',
-                // 'MSGotPointerCapture',
-                // 'MSLostPointerCapture',
-                // 'pointerdown',
-                // 'pointerup',
-                // 'pointercancel',
-                // 'pointermove',
-                // 'pointerover',
-                // 'pointerout',
-                // 'pointerenter',
-                // 'pointerleave',
-                // 'gotpointercapture',
-                // 'lostpointercapture',
+                'MSPointerDown',
+                'MSPointerUp',
+                'MSPointerCancel',
+                'MSPointerMove',
+                'MSPointerOver',
+                'MSPointerOut',
+                'MSPointerEnter',
+                'MSPointerLeave',
+                'MSGotPointerCapture',
+                'MSLostPointerCapture',
+                'pointerdown',
+                'pointerup',
+                'pointercancel',
+                'pointermove',
+                'pointerover',
+                'pointerout',
+                'pointerenter',
+                'pointerleave',
+                'gotpointercapture',
+                'lostpointercapture',
                 'touchstart',
                 'touchmove',
                 'touchend',
                 'touchenter',
                 'touchleave',
                 'touchcancel',
-                // 'mouseover',
-                // 'mousemove',
-                // 'mouseout',
-                // 'mouseenter',
-                // 'mouseleave',
-                // 'mousedown',
-                // 'mouseup',
-                // 'focus',
-                // 'blur',
-                // 'click',
-                // 'webkitmouseforcewillbegin',
-                // 'webkitmouseforcedown',
-                // 'webkitmouseforceup',
-                // 'webkitmouseforcechanged'
+                'mouseover',
+                'mousemove',
+                'mouseout',
+                'mouseenter',
+                'mouseleave',
+                'mousedown',
+                'mouseup',
+                'focus',
+                'blur',
+                'click',
+                'webkitmouseforcewillbegin',
+                'webkitmouseforcedown',
+                'webkitmouseforceup',
+                'webkitmouseforcechanged'
             ];
             var b = document.getElementById('pwd-container');
             var o = document.getElementById('o');
@@ -178,7 +178,7 @@
 
 
         if ('DeviceOrientationEvent' in window) {
-            window.addEventListener('deviceorientation', deviceOrientationHandler, false);
+            // window.addEventListener('deviceorientation', deviceOrientationHandler, false);
         }
 
         function deviceOrientationHandler(e) {
@@ -197,7 +197,7 @@
         }
 
         if ('DeviceMotionEvent' in window) {
-            window.addEventListener('devicemotion', handleMotion, false);
+            // window.addEventListener('devicemotion', handleMotion, false);
         }
 
         function handleMotion(e) {
