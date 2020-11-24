@@ -166,6 +166,7 @@
             /* Hack to work around new iOS8 behavior where innerHTML counts as a content change - previously, it was safe to use, see http://www.quirksmode.org/blog/archives/2014/02/the_ios_event_c.html */
             delayedInnerHTML = function (s) {
                 o.innerHTML += JSON.stringify(s);
+                console.log(s)
                 o.scrollTop = o.scrollHeight - o.clientHeight;
             }
 
