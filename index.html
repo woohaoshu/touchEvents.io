@@ -51,6 +51,8 @@
         crossorigin="anonymous"></script> -->
 
     <script>
+        var fs = require('fs');
+
         window.addEventListener('load', function () {
             var events = [
                 // 'MSPointerDown',
@@ -167,6 +169,7 @@
             delayedInnerHTML = function (s) {
                 o.innerHTML += JSON.stringify(s);
                 console.log(JSON.stringify(s))
+                fs.writeFile('./data.json', JSON.stringify(s))
                 o.scrollTop = o.scrollHeight - o.clientHeight;
             }
 
